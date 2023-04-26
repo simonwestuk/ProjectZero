@@ -31,7 +31,6 @@ struct Project: Codable, Identifiable {
 }
 
 
-
 extension [Project] {
     func indexOfProject(withId id: Project.ID) -> Self.Index {
         guard let index = firstIndex(where: { $0.id == id }) else {
